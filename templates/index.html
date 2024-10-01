@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select a Cryptocurrency</title>
+</head>
+<body>
+    <h1>Select a Cryptocurrency</h1>
+    <ul>
+        {% for coin in cryptocurrencies %}
+            <li><a href="{{ url_for('show_crypto_data', coin=coin) }}">{{ coin.capitalize() }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
