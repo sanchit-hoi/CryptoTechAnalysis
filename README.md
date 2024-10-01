@@ -1,1 +1,3 @@
 # CryptoTechAnalysis
+
+Initial readme
